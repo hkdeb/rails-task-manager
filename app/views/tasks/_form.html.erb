@@ -1,0 +1,24 @@
+<%= form_for @task do |f| %>
+  <%= f.text_field :name, placeholder: 'Name' %>
+  <%= f.text_field :content, placeholder: 'Content' %>
+  <%= f.submit %>
+  <% end %>
+
+
+
+<!-- edit form
+<form action="/tasks/<%#= @task.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <input type="hidden" name="authenticity_token" value="<%#= form_authenticity_token %>">
+  <input type="text" name="task[name]" placeholder="New name" value="<%#= @task.name %>">
+  <input type="text" name="task[content]" placeholder="New content" value="<%#= @task.content %>">
+  <input type="submit" value="Edit task!">
+</form> -->
+
+<!-- new form
+<form action="/tasks" method="post">
+  <input type="hidden" name="authenticity_token" value="<%#= form_authenticity_token %>">
+  <input type="text" name="task[name]" placeholder="Name">
+  <input type="text", name="task[content]" placeholder="Content">
+  <input type="submit" value="Create Task!">
+</form> -->
